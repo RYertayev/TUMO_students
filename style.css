@@ -1,13 +1,17 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: #C97ED3;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
-
+.logo {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 120px; /* можно менять */
+}
 /* Контейнер */
 .container {
   width: 400px;
@@ -15,6 +19,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   text-align: center;
+  background-color: white;
 }
 
 /* Заголовок */
@@ -65,4 +70,60 @@ button:hover {
   margin-top: 20px;
   font-size: 16px;
   color: #333;
+}
+
+/* Контейнер */
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Поля и кнопка */
+input, button {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Логотип */
+.logo {
+  display: block;
+  margin: 0 auto 15px auto;
+  width: 100px;
+}
+
+/* 📱 Адаптация под телефоны */
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+    height: auto;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .logo {
+    width: 80px;
+  }
 }
